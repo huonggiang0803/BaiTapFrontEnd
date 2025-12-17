@@ -1,0 +1,331 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  mask-repeat: no-repeat;
+  mask-image: url("../icons/ICON.svg"); /* đổi màu */
+  background-color: #c5ccd5;
+}
+.icon-default {
+  background: url("../icons/ICON.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.icon-search {
+  position: absolute;
+  mask-image: url("../icons/ICON.svg");
+  mask-repeat: no-repeat;
+  mask-position: -283px -945px;
+  background-color: gray;
+  width: 17px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.icon-notification {
+  background: url("../icons/notification.svg") no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.1019607843);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.icon-header-right {
+  width: 21px;
+  height: 21px;
+  mask-image: url("../icons/ICON.svg");
+  mask-repeat: no-repeat;
+  mask-position: 0 -608px;
+  background-color: gray;
+}
+/* Sidebar icons */
+.icon-sb-recruiment {
+  mask-position: -94px -113px;
+}
+.icon-candidate {
+  mask-position: -24px -112px;
+}
+.icon-sb-calendar {
+  mask-position: -144px -113px;
+}
+.icon-sb-potential {
+  mask-position: 0 -112px;
+}
+.icon-sb-campaign {
+  mask-position: -73px -633px;
+}
+.icon-sb-job {
+  mask-position: -336px -113px;
+}
+.icon-sb-marketing {
+  mask-position: -160px -248px;
+}
+.icon-sb-message {
+  mask-position: -72px -845px;
+}
+.icon-sb-report {
+  mask-position: -72px -113px;
+}
+.icon-sb-setting {
+  mask-position: 0 -136px;
+}
+.icon-sb-knowledge {
+  background: url("../icons/icon-sb-knowledge.svg") no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+.icon-sb-knowledge-white {
+  mask-position: -48px -633px;
+  background-color: #fff;
+}
+.icon-logo {
+  width: 54px;
+  height: 54px;
+  background-position: -53px -411px;
+}
+
+.icon-left {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  mask-repeat: no-repeat;
+  mask-image: url("../icons/ICON.svg");
+  background-color: #ffffff;
+}
+.icon-collapse {
+  mask-position: -60px -696px;
+}
+.icon-btn {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+.icon-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.icon-store {
+  background: url("../icons/icon-store.svg") no-repeat;
+  background-position: center;
+}
+.icon-add-user {
+  background: url("../icons/user-controlpanel.svg") no-repeat;
+  background-position: center;
+}
+.icon-messenger {
+  background: url("../icons/icon-message.svg") no-repeat;
+  background-position: center;
+}
+.notification {
+  background: url("../icons/icon-notification.svg") no-repeat;
+  background-position: center;
+}
+.icon-help {
+  background: url("../icons/icon-help.svg") no-repeat;
+  background-position: center;
+}
+.more-menu {
+  background: url("../icons/more-menu.svg") no-repeat;
+  background-position: center;
+}
+.knowledge-menu {
+  background: url("../icons/knowledge-menu.svg") no-repeat;
+  background-position: center;
+}
+.icon-add-candidate {
+  mask-position: -20px -656px;
+}
+.icon-right {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  mask-repeat: no-repeat;
+  mask-image: url("../icons/ICON.svg");
+  background-color: #ffffff;
+}
+.icon-ai-search-candidate {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-ai-search-candidate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../icons/ai-search-candidate.svg") no-repeat center;
+  background-size: contain;
+  animation: spinFFF 20s infinite;
+}
+
+.icon-ai-search-candidate::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../icons/ai-search-candidate-start.svg") no-repeat center;
+  background-size: contain;
+  animation: inspinFFF 20s infinite;
+}
+.border-icon-box {
+  width: 28px;
+  height: 28px;
+
+  background-color: #ffffff;
+  border: 1px solid #e0e6ec;
+  border-radius: 4px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.border-icon-box:hover {
+  border-color: #2680eb;
+  background-color: #e2efff;
+}
+.color-icon-setting:hover {
+  background-color: #2680eb;
+}
+.icon-box {
+  width: 20px;
+  height: 20px;
+
+  background-color: gray;
+
+  mask-image: url("../icons/ICON.svg");
+  mask-repeat: no-repeat;
+  mask-size: auto;
+}
+.icon-filter {
+  mask-position: -40px -656px;
+}
+.icon-filter:hover {
+  background-color: #2680eb;
+}
+.icon-export {
+  mask-position: -60px -656px;
+}
+.icon-export:hover {
+  background-color: #2680eb;
+}
+.icon-interactive-history {
+  mask-position: 0 -844px;
+}
+.icon-setting {
+  mask-position: -24px -608px;
+}
+.color-icon-setting {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  mask-repeat: no-repeat;
+  mask-image: url("../icons/ICON.svg"); /* đổi màu */
+  background-color: gray;
+}
+.title-and-icons {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo-recruitment-new {
+  background: url("../icons/logo-recruitment-new.svg") no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  margin-top: 8px;
+}
+
+.icon-switch-app {
+  background: url("../icons/icon-swich-app.svg") no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  margin-top: -3px;
+}
+.header-logo-icons-left {
+  margin-left: -35px;
+}
+.header-logo-icons-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 62px;
+  margin-top: -15px;
+}
+.icon-dot-import {
+  mask-position: -305px -33px;
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+}
+.icon-more-vertial {
+  mask-position: -96px -80px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  transform: rotate(90deg);
+}
+.icon-plus-blue {
+  mask-position: -369px -705px;
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  background-color: #2680eb;
+  right: 33px;
+  top: 10px;
+}
+.dx-checkbox-container {
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.icon-arrow-down {
+  mask-position: -33px -48px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  background-color: #212121;
+}
+
+.edit-btn {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  mask-position: -180px -656px;
+}
+.page-btn-prev {
+  height: 20px;
+  width: 20px;
+  min-width: 20px;
+  mask-position: -60px -696px;
+  background-color: #212121;
+}
+.page-btn-next {
+  height: 20px;
+  width: 20px;
+  min-width: 20px;
+  mask-position: -40px -696px;
+  background-color: #212121;
+}
+.icon-check-box {
+  display: block;
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 1.5px;
+  min-width: 20px;
+  border-color: #4f5153;
+  mask-position: 0px -696px;
+  background-color: #7a8188;
+}
