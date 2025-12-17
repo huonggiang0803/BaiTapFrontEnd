@@ -21,15 +21,61 @@ export function openModal(candidate = null) {
   const modal = document.getElementById("add-candidate-modal");
   modal.classList.remove("hidden");
 
+  const titleEl = document.querySelector(".modal-title");
+
   if (candidate) {
+    // ===== EDIT =====
     editingCandidateId = candidate.id;
+    titleEl.textContent = "Chỉnh sửa ứng viên";
+
     document.getElementById("candidate-fullname").value =
-      candidate.fullname !== "--" ? candidate.fullname : "";
+      candidate.fullname && candidate.fullname !== "--" ? candidate.fullname : "";
+
     document.getElementById("candidate-email").value =
-      candidate.email !== "--" ? candidate.email : "";
+      candidate.email && candidate.email !== "--" ? candidate.email : "";
+
     document.getElementById("candidate-phone").value =
-      candidate.phone !== "--" ? candidate.phone : "";
-  } 
+      candidate.phone && candidate.phone !== "--" ? candidate.phone : "";
+
+    document.getElementById("candidate-address").value =
+      candidate.address || "";
+
+    document.getElementById("candidate-dob").value =
+      candidate.dateOfBirth || "";
+
+    document.getElementById("candidate-applyDate").value =
+      candidate.applyDate || "";
+
+    // Giới tính
+    const genderEl = document.getElementById("candidate-gender");
+    if (candidate.gender === "Nam") genderEl.value = "male";
+    else if (candidate.gender === "Nữ") genderEl.value = "female";
+    else genderEl.value = "";
+
+    // Khu vực làm việc
+    const workingAreaEl = document.getElementById("candidate-workingArea");
+    if (workingAreaEl) {
+      workingAreaEl.value = candidate.workingArea || "";
+    }
+
+  } else {
+    // ===== ADD NEW =====
+    editingCandidateId = null;
+    titleEl.textContent = "Thêm ứng viên";
+
+    document.getElementById("candidate-fullname").value = "";
+    document.getElementById("candidate-email").value = "";
+    document.getElementById("candidate-phone").value = "";
+    document.getElementById("candidate-address").value = "";
+    document.getElementById("candidate-dob").value = "";
+    document.getElementById("candidate-applyDate").value = "";
+
+    const genderEl = document.getElementById("candidate-gender");
+    if (genderEl) genderEl.value = "";
+
+    const workingAreaEl = document.getElementById("candidate-workingArea");
+    if (workingAreaEl) workingAreaEl.value = "";
+  }
 }
 
 function closeModal() {

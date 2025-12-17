@@ -283,13 +283,23 @@ function attachPageSizeChangeEvent() {
 }
 
 // POPUP FORM 
-export function fillCandidateForm(c) {
+function fillCandidateForm(c) {
   document.getElementById("candidate-fullname").value = c.fullname || "";
   document.getElementById("candidate-email").value = c.email || "";
   document.getElementById("candidate-phone").value = c.phone || "";
   document.getElementById("candidate-address").value = c.address || "";
-  document.getElementById("candidate-applyDate").value = c.applyDate || "";
+
   document.getElementById("candidate-dob").value = c.dateOfBirth || "";
-  document.getElementById("candidate-gender").value =
-    c.gender === "Nam" ? "male" : c.gender === "Nữ" ? "female" : "";
+  document.getElementById("candidate-applyDate").value = c.applyDate || "";
+
+  // Giới tính
+  const genderSelect = document.getElementById("candidate-gender");
+  if (c.gender === "Nam") genderSelect.value = "male";
+  else if (c.gender === "Nữ") genderSelect.value = "female";
+  else genderSelect.value = "";
+
+  // Khu vực làm việc
+  const workingArea = document.getElementById("candidate-workingArea");
+  if (workingArea) workingArea.value = c.workingArea || "";
 }
+
